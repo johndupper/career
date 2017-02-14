@@ -1,7 +1,7 @@
 <!-- search results page -->
 
 <% @all_jobs.each do |job| %>
-
+    <form action="/jobs" method="post">
       Job Title:
       <input type="text" name="title" value="<%= job['jobtitle'] %>"><br>
       Company:
@@ -12,6 +12,6 @@
       <input type="text" name="snippet" value="<%= job['snippet'] %>"><br>
       Posting Date:
       <input type="text" name="date" value="<%= job['date'] %>"><br>
-      <input type="submit" value="Submit"><br>
-
+      <input type="submit" value="Submit"><br><br>
+    </form>
 <% end %>
