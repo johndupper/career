@@ -3,15 +3,15 @@
 <% @all_jobs.each do |job| %>
     <form action="/jobs" method="post">
       <h4><%= job['jobtitle'] %></h4>
-      <input type="hidden" name="title" value="<%= job['jobtitle'] %>"><br>
+      <input type="hidden" name="title" value="<%= job['jobtitle'] %>">
       <h4><%= job['company'] %></h4>
-      <input type="hidden" name="company" value="<%= job['company'] %>"><br>
+      <input type="hidden" name="company" value="<%= job['company'] %>">
       <h5><%= job['formattedLocation'] %></h5>
-      <input type="hidden" name="location" value="<%= job['formattedLocation'] %>"><br>
+      <input type="hidden" name="location" value="<%= job['formattedLocation'] %>">
       <h5><%= strip_tags(job['snippet']) %></h5>
-      <input type="hidden" name="snippet" value="<%= strip_tags(job['snippet']) %>"><br>
+      <input type="hidden" name="snippet" value="<%= strip_tags(job['snippet']) %>">
       <h5><%= job['date'] %></h5>
-      <input type="hidden" name="date" value="<%= job['date'] %>"><br>
+      <input type="hidden" name="date" value="<%= job['date'] %>">
       <input type="submit" value="Save Job">
     </form>
 <% end %>
