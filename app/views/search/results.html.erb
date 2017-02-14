@@ -1,14 +1,17 @@
 <!-- search results page -->
-<h3>Job Title:</h3>
-<h5><%= @job_title %></h5>
-
-<h3>Location:</h3>
-<h5><%= @job_location %></h5>
-
-<h3>API Results:</h3>
 
 <% @all_jobs.each do |job| %>
-    <div>
-      <h3><%= job['jobtitle'] %></h3>
-    </div>
+
+      Job Title:
+      <input type="text" name="title" value="<%= job['jobtitle'] %>"><br>
+      Company:
+      <input type="text" name="company" value="<%= job['company'] %>"><br>
+      Location:
+      <input type="text" name="location" value="<%= job['formattedLocation'] %>"><br>
+      Details:
+      <input type="text" name="snippet" value="<%= job['snippet'] %>"><br>
+      Posting Date:
+      <input type="text" name="date" value="<%= job['date'] %>"><br>
+      <input type="submit" value="Submit"><br>
+
 <% end %>

@@ -1,5 +1,7 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
+  # allows for auth. bypass for local development
+  skip_before_filter :verify_authenticity_token
 
   # GET /jobs
   # GET /jobs.json
