@@ -4,3 +4,11 @@
 
 <h3>Location:</h3>
 <h5><%= @job_location %></h5>
+
+<h3>API Results:</h3>
+
+<% @all_jobs.each do |job| %>
+    <div>
+      <h3><%= job['jobtitle'] %></h3>
+    </div>
+<% end %>
