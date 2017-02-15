@@ -14,3 +14,8 @@
  *= require_tree .
  *= require_self
  */
+
+body {  padding-top: 30px;  }
+a, a:hover {
+    text-decoration: none;
+}

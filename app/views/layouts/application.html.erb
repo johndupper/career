@@ -9,10 +9,21 @@
   </head>
 
   <body>
-    <nav>
-      <a href="/">Jobs</a>
-      <a href="/search">Search</a>
-    </nav>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Career Compass</a>
+      </div>
+      <div id="navbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Saved</a></li>
+          <li><a href="/search">Search</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
     <%= yield %>
   </body>
 </html>

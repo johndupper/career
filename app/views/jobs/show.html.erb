@@ -25,5 +25,5 @@
   <%= @job.date %>
 </p>
 
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>
+<button type="button" class="btn"><%= link_to 'Back', jobs_path %></button>
+<button type="button" class="btn"><%= link_to 'Show', @job %></button>
